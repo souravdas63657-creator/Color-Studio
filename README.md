@@ -6,6 +6,6 @@ Color Studio 🎨  A minimalist, utility-first Color Palette Generator &amp; WCA
 ├── style.css    # Design tokens, layout grid, drawer/toast animations, and responsive breakpoints
 ├── app.js       # State management, hex generator, WCAG math, DOM rendering, and localStorage CRUD
 └── README.md    # Project documentation
-🚀 Getting StartedNo build tools or dependencies required.Clone the repository:git clone https://github.com/souravdas63657/Color-Studio.git
+🚀 Getting StartedNo build tools or dependencies required.Clone the repository:git clone https://github.com/souravdas63657-creator/Color-Studio
 Navigate to the project folder:cd color-studio
 Run the app:Open index.html directly in any modern web browser, orUse the Live Server extension in VS Code for automatic reloads.⌨️ Controls & UsageActionControlGenerate new paletteClick Generate or press SpaceLock / Unlock colorClick the 🔓 / 🔒 button on any colorCopy Hex codeClick the #HEX label on any colorSave current paletteClick Save in the top toolbarView / Load / Delete savedClick Saved to open the side drawer💡 Future Enhancements[ ] Export as CSS Variables: One-click modal to copy :root { --color-1: ...; } snippets.[ ] Manual Color Picker: Fine-tune individual shades with a native color input or HSL sliders.[ ] Shareable URLs: Encode the current 5 hex codes into the URL hash so palettes can be shared via link.📄 LicenseThis project is open source and available under the MIT License.
