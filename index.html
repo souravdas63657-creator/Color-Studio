@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Color Studio</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="toolbar">
+        <div class="toolbar-content">
+          <h1 class="logo">Color Studio</h1>
+          <div class="toolbar-action">
+            <button id="generateBtn" class="btn btn-primary">
+              Generate <kbd>Space</kbd>
+            </button>
+            <button id="saveBtn" class="btn">Save</button>
+            <button id="toggleDrawerBtn" class="btn">Saved Palette</button>
+          </div>
+        </div>
+    </header>
+
+    <main>
+      <div class="palette-grid" id="paletteGrid">
+          <section
+            class="color-col"
+            style="background-color: #0f172a; color: #ffffff"
+          >
+            <button class="lock-btn" aria-label="Lock color">🔓</button>
+            <button class="hex-code">#0F172A</button>
+            <span class="contrast-badge">17.8:1 · AAA</span>
+          </section>
+
+          <section
+            class="color-col"
+            style="background-color: #334155; color: #ffffff"
+          >
+            <button class="lock-btn" aria-label="Lock color">🔓</button>
+            <button class="hex-code">#334155</button>
+            <span class="contrast-badge">10.4:1 · AAA</span>
+          </section>
+
+          <section
+            class="color-col"
+            style="background-color: #64748b; color: #ffffff"
+          >
+            <button class="lock-btn" aria-label="Lock color">🔓</button>
+            <button class="hex-code">#64748B</button>
+            <span class="contrast-badge">4.7:1 · AA</span>
+          </section>
+
+          <section
+            class="color-col"
+            style="background-color: #cbd5e1; color: #0f172a"
+          >
+            <button class="lock-btn" aria-label="Lock color">🔓</button>
+            <button class="hex-code">#CBD5E1</button>
+            <span class="contrast-badge">12.6:1 · AAA</span>
+          </section>
+
+          <section
+            class="color-col"
+            style="background-color: #f8fafc; color: #0f172a"
+          >
+            <button class="lock-btn" aria-label="Lock color">🔓</button>
+            <button class="hex-code">#F8FAFC</button>
+            <span class="contrast-badge">17.1:1 · AAA</span>
+          </section>
+        </div>
+      </div>
+    </main>
+
+      <aside id="savedDrawer" class="drawer" aria-hidden="true">
+        <div class="drawer-header">
+          <h2>Saved Palettes</h2>
+          <button id="closeDrawerBtn" class="btn" aria-label="Close drawer">
+            ✕
+          </button>
+        </div>
+        <div id="savedList" class="saved-list">
+          <p class="empty-msg">No saved palettes yet.</p>
+        </div>
+      </aside>
+
+      <div id="toast" class="toast" role="status">Copied to clipboard!</div>
+
+    <script src="app.js" defer></script>
+  </body>
+</html>
